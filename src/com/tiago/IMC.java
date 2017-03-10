@@ -21,7 +21,7 @@ public class IMC
             double imc = peso / (altura*altura); //(Math.pow(altura, 2) );
             String texto = "";
 
-            if(sexo=="F") {
+            if(sexo.compareTo("F")==0) {
                 if(imc < 19)
                   texto = "Abaixo do peso";
                 else if(imc <= 25)
@@ -33,7 +33,8 @@ public class IMC
                 else
                     texto = "Obesidade II";
             }
-            if(sexo=="M") {
+
+            if(sexo.compareTo("M")==0) {
                 if(imc < 20)
                     texto = "Abaixo do peso";
                   else if(imc <= 26)
