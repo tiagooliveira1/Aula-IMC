@@ -32,7 +32,8 @@ public class IMC
                     texto = "Obesidade I";
                 else
                     texto = "Obesidade II";
-            } else {
+            }
+            if(sexo=="M") {
                 if(imc < 20)
                     texto = "Abaixo do peso";
                   else if(imc <= 26)
@@ -44,7 +45,6 @@ public class IMC
                   else
                       texto = "Obesidade II";
             }
-
             System.out.println("Seu IMC:"+ Math.round(imc)+" - "+texto);
         }
     }
